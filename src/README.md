@@ -1,6 +1,7 @@
 # Conditional Flow
 
-## Booleans 
+## Booleans
+
 Booleans and conditional flow are closely related. Booleans are used to store `true` or `false` values in our code. We can set variables to `true` or `false` directly:
 
 ```javascript
@@ -33,7 +34,7 @@ In the above example we check if `age` is greater than 18, but there are many di
 * Is not equal to `10 !== 10`
 * Is greater than `10 > 10`
 * Is less than `10 < 10`
-* Is greater or equal to `10 >= 10` 
+* Is greater or equal to `10 >= 10`
 * Is less or equal to `10 <= 10`
 
 As well as comparing numbers, we can also compare strings:
@@ -53,7 +54,7 @@ As well as comparing numbers, we can also compare strings:
 >>> true 
 ```
 
-We are not limited to a single comparison - we can use multiple comparisons chained together with either the the logical AND operator `&&` or the logical OR operator `||` (2 pipe characters). 
+We are not limited to a single comparison - we can use multiple comparisons chained together with either the the logical AND operator `&&` or the logical OR operator `||` (2 pipe characters).
 
 For a chained comparison to return true, `&&` requires that *all* combined expressions are also `true`. For example
 
@@ -92,7 +93,8 @@ isAllowed = age > 17 || withParent //false, withParent is false and age>17 is fa
 ```
 
 ## If Statement
-Up until now, whatever we were writing was being executed when our program ran. Conditions allow us to execute some code only if a condition is met. The main way to implement a condition in JavaScript is by using an `if` statement. 
+
+Up until now, whatever we were writing was being executed when our program ran. Conditions allow us to execute some code only if a condition is met. The main way to implement a condition in JavaScript is by using an `if` statement.
 
 > 👨‍💻 Run these examples in your REPL as you read along! 👨‍💻
 
@@ -108,7 +110,7 @@ if (false) {
 } 
 ```
 
-If we run this code, only the first statement is printed. This is because an `if` statement will only run code in the following block (everything between the curly braces immediately after the `if`) when the expression in between the brackets evaluates to `true`. 
+If we run this code, only the first statement is printed. This is because an `if` statement will only run code in the following block (everything between the curly braces immediately after the `if`) when the expression in between the brackets evaluates to `true`.
 
 For example, we can provide a boolean variable:
 
@@ -189,10 +191,12 @@ switch (day) {
 ```
 
 ## Next
+
 Work your way through the tests for this section. You can use the references below and also
 the `example.js` file to see more code samples. Remember you can make use of the Node REPL 
 to try out and experiment with code.
 
 ## References
+
 * [Boolean Conditional Flow Slides](https://docs.google.com/presentation/d/17YZv-apFaaFM0ICtIwZN2moSpKtS4-Mq-heCy6L7kxo/edit#slide=id.gd46f8ee6d4_0_8)
 * [MDN If...Else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
