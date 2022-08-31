@@ -1,18 +1,8 @@
 # Programming Fundamentals: Conditional Flow
 
-## TODO: Template updates - then delete this section
-
-- [ ] Add optional Extensions `src` and `spec` files
-  - Add in correct `extensions` sub-directories. See also `--config=...` in `package.json "scripts"` and `spec/support`
-- [ ] Fill in details below!
-
 ## Learning Objectives
 
-- Understand how to use ...
-
-## Introduction
-
-In this exercise you will ...
+- Use conditional statements to control the logical flow of an application
 
 ## Setup
 
@@ -56,9 +46,6 @@ In this exercise you will ...
 ## Extensions
 
 - Extension exercises can be found in the `src/extensions` directory with corresponding tests in the `spec/extensions` directory.
-
-- Follow the instructions in the following files to complete the extensions.
-  - TODO: src/extensions/<file>.js
 
 - To run the tests for the extensions, you can either run spec files individually as follows:
 
