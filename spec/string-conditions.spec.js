@@ -29,13 +29,13 @@ describe('answerThree', () => {
 })
 
 describe('answerFour', () => {
-  xit('should be true', () => {
+  it('should be true', () => {
     expect(answerFour).toBe(true)
   })
 })
 
 describe('answerFive', () => {
-  xit('should be false', () => {
+  it('should be false', () => {
     expect(answerFive).toBe(false)
   })
 })
