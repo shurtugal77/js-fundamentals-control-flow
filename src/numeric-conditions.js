@@ -1,7 +1,10 @@
-// TODO: Implement the functions below to make the tests pass
-
+// Don't edit the code below this line up until 'TODO:'
+const NUM_ONE = 92837 // eslint-disable-line no-unused-vars
+const NUM_TWO = 92827 // eslint-disable-line no-unused-vars
 const ARRAY_ONE = [] // eslint-disable-line no-unused-vars
-const ARRAY_TWO = ['Hello', 'Conditions'] // eslint-disable-line no-unused-vars
+const ARRAY_TWO = ['Hello', 'Conditions', NUM_ONE] // eslint-disable-line no-unused-vars
+
+// TODO: Implement the tasks below to make the tests pass
 
 // 1. Use conditional statements to set answerOne to false if ARRAY_ONE is not empty
 // or true if it is empty
@@ -11,16 +14,10 @@ let answerOne
 // or true if it is empty
 let answerTwo
 
-const NUM_ONE = 92837 // eslint-disable-line no-unused-vars
-const NUM_TWO = 92827 // eslint-disable-line no-unused-vars
-
 // 3. Use conditional statements to set answerThree to true if NUM_ONE is more than NUM_TWO
 let answerThree
 
-const NUMBERS = [67, 2039, 17, 501, 98, 139, 21] // eslint-disable-line no-unused-vars
-
-// 4. Use a combination of a loop and conditional statements to set answerFour
-// to the lowest number in the NUMBERS array
+// 4. Use conditional statements to set answerFour to true if NUM_ONE or NUM_TWO are included in ARRAY_TWO
 let answerFour
 
 // Don't edit the code below this line

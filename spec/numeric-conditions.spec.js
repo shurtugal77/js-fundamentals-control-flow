@@ -24,7 +24,7 @@ describe('answerThree', () => {
 })
 
 describe('answerFour', () => {
-  xit('should be 17', () => {
-    expect(answerFour).toEqual(17)
+  it('should be 17', () => {
+    expect(answerFour).toEqual(true)
   })
 })
