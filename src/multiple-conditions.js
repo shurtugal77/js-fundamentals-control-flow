@@ -1,7 +1,7 @@
 // Task 1
-const LOWER = 4
-const UPPER = 17
-const NUM = 9
+const LOWER = 4 // eslint-disable-line no-unused-vars
+const UPPER = 17 // eslint-disable-line no-unused-vars
+const NUM = 9 // eslint-disable-line no-unused-vars
 
 // 1. Use conditional statements to set the value of the answerOne variable
 // to be true if the NUM variable is more than or equal to the LOWER variable
