@@ -53,27 +53,16 @@ describe('answerSeven', () => {
 })
 
 describe('answerEight', () => {
-  it("should be 'Winter'", () => {
-    if (['December', 'January', 'February'].includes(MONTH)) {
-      expect(answerEight).toEqual('Winter')
+    const seasons = {
+      Winter: ['December', 'January', 'February'],
+      Autumn: ['September', 'October', 'November'],
+      Summer: ['June', 'July', 'August'],
+      Spring: ['March', 'April', 'May']
     }
-  })
 
-  it("should be 'Autumn'", () => {
-    if (['September', 'October', 'November'].includes(MONTH)) {
-      expect(answerEight).toEqual('Autumn')
-    }
-  })
+    const expected = Object.keys(seasons).find(season => seasons[season].includes(MONTH))
 
-  it("should be 'Summer'", () => {
-    if (['June', 'July', 'August'].includes(MONTH)) {
-      expect(answerEight).toEqual('Summer')
-    }
-  })
-
-  it("should be 'Spring'", () => {
-    if (['March', 'April', 'May'].includes(MONTH)) {
-      expect(answerEight).toEqual('Spring')
-    }
-  })
+    it(`should be '${expected}'`, () => {
+      expect(answerEight).toEqual(expected)
+    })
 })
