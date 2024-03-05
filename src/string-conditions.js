@@ -68,7 +68,7 @@ const STR_SEVEN = 'Kayla' // eslint-disable-line no-unused-vars
 let answerSix
 
 const lengthOfSeven = STR_SEVEN.length
-const middleChar = Math.floor(lengthOfSeven / 2 + 1) - 1 // + 1 first to always find the middle. -1 then to counteract the start at 0
+const middleChar = Math.floor(lengthOfSeven / 2 + 1) - 1 // + 1 first to always find the middle. -1 then to counteract the start at 0. Mathfloor rundet immer ab
 
 if (lengthOfSeven % 2 !== 0) {
   answerSix = STR_SEVEN[middleChar]
@@ -80,6 +80,18 @@ console.log(answerSix)
 const STR_EIGHT = 'Alex' // eslint-disable-line no-unused-vars
 
 let answerSeven
+
+// Index von 0 und (length-1) muss jeweils den gleichen Abstand von der "Mitte" haben
+
+const lengthOfEight = STR_EIGHT.length
+const middleOfEigth = lengthOfEight / 2 - 1 // -1 für Indexkorrektur
+const leftIndex = 0 + middleOfEigth // 0 als Startindex ist bereits bereinigt
+const rightIndex = lengthOfEight - 1 - middleOfEigth // -1 für Indexkorrektur
+
+if (lengthOfEight % 2 === 0) {
+  answerSeven = STR_EIGHT[leftIndex] + STR_EIGHT[rightIndex]
+}
+console.log(answerSeven)
 
 // 8. Set answerEight to the appropriate season based on what MONTH is set to
 //
@@ -96,6 +108,29 @@ let answerSeven
 const MONTH = 'January'
 
 let answerEight
+
+const allSeasons = {
+  springSeason: ['March', 'April', 'May'],
+  summerSeason: ['June', 'July', 'August'],
+  autumnSeason: ['September', 'October', 'November'],
+  winterSeason: ['December', 'January', 'February']
+}
+
+// indexOf returns -1 if "MONTH" is not found in the property. If it is not -1 it has found the month!
+
+if (allSeasons.springSeason.indexOf(MONTH) !== -1) {
+  answerEight = 'Spring'
+} else if (allSeasons.summerSeason.indexOf(MONTH) !== -1) {
+  answerEight = 'Summer'
+} else if (allSeasons.autumnSeason.indexOf(MONTH) !== -1) {
+  answerEight = 'Autumn'
+} else if (allSeasons.winterSeason.indexOf(MONTH) !== -1) {
+  answerEight = 'Winter'
+} else {
+  answerEight = 'Input was not a month!'
+}
+
+console.log(answerEight)
 
 module.exports = {
   answerOne,
